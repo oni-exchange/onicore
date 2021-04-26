@@ -1,9 +1,10 @@
 {
-  "name": "oni-swap-core",
+  "name": "@oni-exchange/onicore",
   "description": "🎛 Core contracts for the oni protocol",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "ssh://git@github.com:oni-exchange/onicore.git"
   },
   "files": [
     "contracts",
