@@ -1,10 +1,10 @@
 pragma solidity =0.5.16;
 
 import './interfaces/IOniERC20.sol';
-import './libraries/SafeMath.sol';
+import './libraries/CoreMath.sol';
 
 contract OniERC20 is IOniERC20 {
-    using SafeMath for uint;
+    using CoreMath for uint;
 
     string public constant name = 'Oni LPs';
     string public constant symbol = 'Oni-LP';

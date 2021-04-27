@@ -9,7 +9,7 @@ import './interfaces/IOniFactory.sol';
 import './interfaces/IOniCallee.sol';
 
 contract OniPair is IOniPair, OniERC20 {
-    using SafeMath  for uint;
+    using CoreMath  for uint;
     using UQ112x112 for uint224;
 
     uint public constant MINIMUM_LIQUIDITY = 10**3;
