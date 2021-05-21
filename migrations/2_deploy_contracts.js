@@ -19,8 +19,8 @@ module.exports = function (deployer, network) {
       const b = await deployer.deploy(OniFactory, process.env.RINKEBY_FACTORY_OWNER, { from: process.env.DEPLOYER_ACCOUNT });
       console.log('b:', await b.INIT_CODE_PAIR_HASH.call());
     } else if (network === 'bsc') {
-      // const b = await deployer.deploy(OniFactory, process.env.MAINNET_FACTORY_OWNER, { from: process.env.DEPLOYER_ACCOUNT });
-      // console.log('b:', await b.INIT_CODE_PAIR_HASH.call());
+      const b = await deployer.deploy(OniFactory, process.env.MAINNET_FACTORY_OWNER, { from: process.env.DEPLOYER_ACCOUNT });
+      console.log('b:', await b.INIT_CODE_PAIR_HASH.call());
     } else {
       console.error(`Unsupported network: ${network}`);
     }

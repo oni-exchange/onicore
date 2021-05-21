@@ -23,7 +23,8 @@
     "test": "mocha",
     "prepublishOnly": "yarn test",
     "deploy": "bash ./scripts/deploy.sh",
-    "verify": "bash ./scripts/verify.sh"
+    "verify": "bash ./scripts/verify.sh",
+    "flatten": "truffle-flattener"
   },
   "devDependencies": {
     "@ethersproject/solidity": "^5.1.0",
